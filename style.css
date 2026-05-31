@@ -101,7 +101,7 @@ th {
 }
 
 
-td[contenteditable="true"]:focus {
+td:focus {
     outline: 2px solid #fff;
     background: #252535;
     color: #fff;
