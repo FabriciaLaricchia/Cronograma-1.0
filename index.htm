@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Cronograma Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="color-picker-container">
+        <label for="bg-picker"> <img src="img/pincel.png" alt="" class="img-pincel"></label>
+        <input type="color" id="bg-picker"> 
+    </div>
+
+    <div class="container">
+        <h1>CRONOGRAMA SEMANAL</h1>
+        <table id="cronograma">
+            <thead>
+                <tr>
+                    <th class="Horário">Horário</th>
+                    <th>Domingo</th>
+                    <th>Segunda-Feira</th>
+                    <th>Terça-Feira</th>
+                    <th>Quarta-Feira</th>
+                    <th>Quinta-Feira</th>
+                    <th>Sexta-Feira</th>
+                    <th>Sabádo</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td class="hora" contenteditable="true"="cel-1-0">00:00</td>
+                    <td contenteditable="true" id="cel-1-1"></td>
+                    <td contenteditable="true" id="cel-1-2"></td>
+                    <td contenteditable="true" id="cel-1-3"></td>
+                    <td contenteditable="true" id="cel-1-4"></td>
+                    <td contenteditable="true" id="cel-1-5"></td>
+                    <td contenteditable="true" id="cel-1-6"></td>
+                    <td contenteditable="true" id="cel-1-7"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+       
+    <div class="actions">
+  <button onclick="salvarTudo()" class="btn-salvar">Salvar Alterações</button>
+  
+  <button onclick="Adicionar()" class="btn-add">Adicionar Horário</button>
+</div>
+
+<script src="script.js"></script>
+    
+
+    <script src="script.js"></script>
+
+    <script>
+  const bgPicker = document.getElementById('bg-picker');
+
+  bgPicker.addEventListener('input', (event) => {
+    
+    const selectedColor = event.target.value;
+    
+    document.documentElement.style.setProperty('--custom-bg', selectedColor);
+  });
+    </script>
+</body>
+</html>
